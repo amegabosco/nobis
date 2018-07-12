@@ -1,145 +1,733 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Inspiration for Custom Select Elements | Demo 1</title>
+		<meta name="description" content="Creative styles and ideas for custom select elements" />
+		<meta name="keywords" content="custom select, select style, javascript, inspiration, select element" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-overlay.css" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nobis, Ensemble</title>
-	<meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
-	<meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js/modernizr-custom.js"></script>
-</head>
+        <link rel="stylesheet" type="text/css" href="DataTable/datatables.min.css"/>
 
-<body>
-	<!-- navigation -->
-	<nav class="pages-nav">
-		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Archidioceses</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-docu">Dioceses</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Administration</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-software">Fonction</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-custom">Laics</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-training">Training</a></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Where to buy</a></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
-		<div class="pages-nav__item pages-nav__item--social">
-			<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
-			<a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
-			<a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
-			<a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
-		</div>
-	</nav>
-	<!-- /navigation-->
-	<!-- pages stack -->
-	<div class="pages-stack">
-		<!-- page -->
-		<div class="page" id="page-home">
-			<!-- Blueprint header -->
-			<header class="bp-header cf">
-				<span class="bp-header__present">Blueprint <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
-				<h1 class="bp-header__title">Page Stack Navigation</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<nav class="bp-nav">
-					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/ZoomSlider/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
-					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
-					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25311" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
-					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
-				</nav>
-			</header>
-			<img class="poster" src="images/1.jpg" alt="img01" />
-		</div>
-		<!-- /page -->
-		<div class="page" id="page-docu">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Documentation</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"We cannot have peace among men whose hearts find delight in killing any living creature." &mdash; Rachel Carson
-				</p>
-			</header>
-			<img class="poster" src="images/6.jpg" alt="img06" />
-		</div>
-		<div class="page" id="page-manuals">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Manuals</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
-				</p>
-			</header>
-			<img class="poster" src="images/2.jpg" alt="img02" />
-		</div>
-		<div class="page" id="page-software">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Software &amp; Downloads</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"I decided to pick the diet that I thought would maximize my chances of long-term survival." &mdash; Al Gore
-				</p>
-			</header>
-			<img class="poster" src="images/3.jpg" alt="img03" />
-		</div>
-		<div class="page" id="page-custom">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Customization &amp; Settings</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"You have to make a conscious decision to change for your own well-being, that of your family and your country." &mdash;Bill Clinton
-				</p>
-			</header>
-			<img class="poster" src="images/4.jpg" alt="img04" />
-		</div>
-		<div class="page" id="page-training">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Training &amp; Learning Center</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"The moment I began to understand what was going on with the treatment of animals, it led me more and more in the way of the path I am [on] now, which is a complete vegan." &mdash; Bryan Adams
-				</p>
-			</header>
-			<img class="poster" src="images/5.jpg" alt="img05" />
-		</div>
-		<div class="page" id="page-buy">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Where to buy</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"When people ask me why I don't eat meat or any other animal products, I say, 'Because they are unhealthy and they are the product of a violent and inhumane industry.'" &mdash;
-				</p>
-			</header>
-			<img class="poster" src="images/6.jpg" alt="img06" />
-		</div>
-		<div class="page" id="page-blog">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Blog &amp; News</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?" &mdash; Jeremy Bentham
-				</p>
-			</header>
-			<img class="poster" src="images/1.jpg" alt="img01" />
-		</div>
-		<div class="page" id="page-contact">
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Contact</h1>
-				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
-				<p class="info">
-					"Man is the only animal that can remain on friendly terms with the victims he intends to eat until he eats them." &mdash; Samuel Butler
-				</p>
-			</header>
-			<img class="poster" src="images/4.jpg" alt="img04" />
-		</div>
-	</div>
-	<!-- /pages-stack -->
-	<button class="menu-button"><span>Menu</span></button>
-	<script src="js/classie.js"></script>
-	<script src="js/main.js"></script>
-</body>
+        <script type="text/javascript" src="DataTable/datatables.min.js"></script>
 
+
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-underline.css" />
+
+		<script src="js/modernizr-custom.js"></script>
+
+	</head>
+	<body class="demo-1p">
+
+
+
+
+			<!-- navigation -->
+			<nav class="pages-nav">
+				<div class="pages-nav__item"><a class="link link--page" href="#page-diocese">Dioceses</a></div>
+				<div class="pages-nav__item"><a class="link link--page" href="#page-docu">Institutions</a></div>
+				<div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Administration</a></div>
+				<div class="pages-nav__item"><a class="link link--page" href="#page-software">Software</a></div>
+				<div class="pages-nav__item"><a class="link link--page" href="#page-custom">Customization &amp; Settings</a></div>
+				<div class="pages-nav__item"><a class="link link--page" href="#page-training">Training</a></div>
+				<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Where to buy</a></div>
+				<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>
+				<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
+				<div class="pages-nav__item pages-nav__item--social">
+					<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+					<a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+					<a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+					<a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+				</div>
+			</nav>
+			<!-- /navigation-->
+			<!-- pages stack -->
+			<div class="pages-stack">
+				<!-- page -->
+				<div class="page" id="page-diocese">
+					<!-- Blueprint header -->
+					<header class="bp-header cf">
+						<span class="bp-header__present">Dioceses <span class="bp-tooltip bp-icon bp-icon--about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+						<!--<h1 class="bp-header__title">Page Stack Navigation</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<nav class="bp-nav">
+							<a class="bp-nav__item bp-icon bp-icon&#45;&#45;prev" href="http://tympanus.net/Blueprints/ZoomSlider/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+							&lt;!&ndash;a class="bp-nav__item bp-icon bp-icon&#45;&#45;next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a&ndash;&gt;
+							<a class="bp-nav__item bp-icon bp-icon&#45;&#45;drop" href="http://tympanus.net/codrops/?p=25311" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+							<a class="bp-nav__item bp-icon bp-icon&#45;&#45;archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+
+						</nav>-->
+
+
+
+					</header>
+
+                    <div style="z-index: 9999999999999999999">
+
+                        <select class="cs-select cs-skin-underline">
+                            <optgroup label="Burkina">
+                                <option value="1">Ougadoudou</option>
+                                <option value="2">Tengrela</option>
+                                <option value="3">NOUNA</option>
+                            </optgroup>
+                            <optgroup label="Niger">
+                                <option value="5">Smoked Herring in Oyster Gel</option>
+                                <option value="6">Broad Beans in Sea Rosemary Sauce</option>
+                                <option value="7">Grilled Asparagus with Pickled Apple</option>
+                                <option value="8">Cold-smoked Eel with Sea Purslane </option>
+                            </optgroup>
+                        </select>
+
+                    </div>
+
+
+
+					<div id="div_dt_staff_diocese" style="width: 80%">
+
+                        <table id=""  class="" style="font-size: 80%;width: 100%" >
+                            <thead>
+                            <tr>
+                                <th>Fonction</th>
+                                <th>Nom</th>
+                                <th>Ville</th>
+                            </tr>
+                            </thead>
+
+                           <tbody>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Adara E. Conner</td>
+                               <td>Maser</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Vera Burch</td>
+                               <td>Ganshoren</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Scott Guerra</td>
+                               <td>Hastings</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Nehru K. Morrison</td>
+                               <td>Fort Saskatchewan</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Jerome Garrett</td>
+                               <td>Lac La Biche County</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Caldwell Padilla</td>
+                               <td>Limburg a.d. Lahn</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Sophia Medina</td>
+                               <td>Plainevaux</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Beck Y. Buck</td>
+                               <td>Leeds</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Tucker Wallace</td>
+                               <td>Coalhurst</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Brenda Chase</td>
+                               <td>Blaenau Ffestiniog</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Edward Barton</td>
+                               <td>Esterzili</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Venus Gutierrez</td>
+                               <td>Bearberry</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Elijah A. Whitley</td>
+                               <td>Mondolfo</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Carla Colon</td>
+                               <td>Livorno</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Whoopi D. Paul</td>
+                               <td>Hawick</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Nevada C. Duke</td>
+                               <td>Landelies</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Nathan Holcomb</td>
+                               <td>Brecon</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Dominic I. Robbins</td>
+                               <td>Acquedolci</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Shellie Lambert</td>
+                               <td>Douai</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Reece O. Spears</td>
+                               <td>Weelde</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Jade K. Hicks</td>
+                               <td>Warisoulx</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Harper C. Ballard</td>
+                               <td>Jelenia Góra</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Gretchen K. Cooley</td>
+                               <td>Bhind</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Clementine Holland</td>
+                               <td>Nadiad</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Jorden Mullen</td>
+                               <td>South Burlington</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Travis Martin</td>
+                               <td>Valleyview</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Josephine Knight</td>
+                               <td>Ponsacco</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Malachi V. Hurst</td>
+                               <td>Cambridge</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Camilla B. Winters</td>
+                               <td>Tumbler Ridge</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Belle Drake</td>
+                               <td>Avelgem</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Quon Estes</td>
+                               <td>Bergama</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Gretchen Lynch</td>
+                               <td>Cuceglio</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Aaron Moran</td>
+                               <td>Veere</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Naida Price</td>
+                               <td>Soye</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Uta I. Lucas</td>
+                               <td>Patiala</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Nathan Frazier</td>
+                               <td>Gorzów Wielkopolski</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Odysseus E. Whitney</td>
+                               <td>Gasp�</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Jared Z. Daniel</td>
+                               <td>Sundrie</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Sydnee F. White</td>
+                               <td>Bandırma</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Emily Moran</td>
+                               <td>Hamme</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Allen Anderson</td>
+                               <td>Chetwynd</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Jordan Cruz</td>
+                               <td>Iquique</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Alyssa Todd</td>
+                               <td>Roma</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Sybill Combs</td>
+                               <td>Requínoa</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Lev K. Jarvis</td>
+                               <td>Grezzana</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Craig K. Whitfield</td>
+                               <td>Sambalpur</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Christian Stephens</td>
+                               <td>Varendonk</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Tanner Morrison</td>
+                               <td>Dingwall</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Wayne N. Sanders</td>
+                               <td>Saint-Quentin</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Kirk A. Parsons</td>
+                               <td>Eckville</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Brady Vincent</td>
+                               <td>Lustin</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Branden Y. Rowe</td>
+                               <td>Casacalenda</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Yasir Stafford</td>
+                               <td>Portland</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Brian Bean</td>
+                               <td>Bergeggi</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Kiona L. Cain</td>
+                               <td>Cabo de Hornos</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Tanya O. Dean</td>
+                               <td>Rinconada</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Conan R. Houston</td>
+                               <td>Rugby</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Kameko J. Mendoza</td>
+                               <td>Bleid</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Sybill B. Weiss</td>
+                               <td>Dublin</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Dennis J. Monroe</td>
+                               <td>Arnesano</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Eugenia Z. Carey</td>
+                               <td>Castor</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Phelan Morton</td>
+                               <td>San Jose</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Emily Wood</td>
+                               <td>Beauport</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Clayton W. Burns</td>
+                               <td>Jambes</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Evangeline D. Taylor</td>
+                               <td>Gbongan</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Chelsea Odonnell</td>
+                               <td>Amstelveen</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Emmanuel U. Pollard</td>
+                               <td>Modena</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Uriel Hunter</td>
+                               <td>Gignod</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Quail M. Barrett</td>
+                               <td>Warren</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Hope D. Alford</td>
+                               <td>Hull</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Mohammad Cobb</td>
+                               <td>Kukatpalle</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Troy Hutchinson</td>
+                               <td>Lobbes</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Tyrone Orr</td>
+                               <td>Wels</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Flynn Q. English</td>
+                               <td>New Bombay</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Byron P. Shannon</td>
+                               <td>Sens</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Thane Zimmerman</td>
+                               <td>Gambolò</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Gil Velez</td>
+                               <td>Friedrichshafen</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Giselle N. Martin</td>
+                               <td>Naperville</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Amanda D. Pittman</td>
+                               <td>Bruderheim</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Alfonso Reyes</td>
+                               <td>Liers</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Nelle J. Hanson</td>
+                               <td>Oyen</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Ignacia X. Logan</td>
+                               <td>Maintal</td>
+                           </tr>
+                           <tr>
+                               <td>Conseiller</td>
+                               <td>Rhea F. Ayala</td>
+                               <td>Ambleside</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Anjolie Richardson</td>
+                               <td>Linsmeau</td>
+                           </tr>
+                           <tr>
+                               <td>Medecin</td>
+                               <td>Sigourney Cannon</td>
+                               <td>Namur</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Melyssa G. Ayers</td>
+                               <td>Clearwater Municipal District</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Gary S. William</td>
+                               <td>Moliterno</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Basil A. Strickland</td>
+                               <td>Edam</td>
+                           </tr>
+                           <tr>
+                               <td>Membre</td>
+                               <td>Eaton Hogan</td>
+                               <td>Bertogne</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Emerald W. Stanley</td>
+                               <td>Invergordon</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Zia K. Buckley</td>
+                               <td>Noisy-le-Grand</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Kaye V. Hubbard</td>
+                               <td>Elversele</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Arden X. Mcclure</td>
+                               <td>La Florida</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Wilma Gould</td>
+                               <td>Eisden</td>
+                           </tr>
+                           <tr>
+                               <td>Econome</td>
+                               <td>Avram C. Campbell</td>
+                               <td>Dunfermline</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Desiree Becker</td>
+                               <td>Palmerston North</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Yael Curtis</td>
+                               <td>Bailivre</td>
+                           </tr>
+                           <tr>
+                               <td>Secretaire</td>
+                               <td>Randall Rios</td>
+                               <td>Chalon-sur-Saône</td>
+                           </tr>
+                           <tr>
+                               <td>Administrateur</td>
+                               <td>Drake F. Nelson</td>
+                               <td>Kirkby Lonsdale</td>
+                           </tr>
+                           <tr>
+                               <td>Vicaire</td>
+                               <td>Richard R. Mercer</td>
+                               <td>St. Andrä</td>
+                           </tr>
+                           </tbody>
+
+                        </table>
+                    </div>
+
+
+
+				</div>
+				<!-- /page -->
+				<div class="page" id="page-docu">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Documentation</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"We cannot have peace among men whose hearts find delight in killing any living creature." &mdash; Rachel Carson
+						</p>
+					</header>
+					<img class="poster" src="images/6.jpg" alt="img06" />
+				</div>
+				<div class="page" id="page-manuals">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Manuals</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
+						</p>
+					</header>
+					<img class="poster" src="images/2.jpg" alt="img02" />
+				</div>
+				<div class="page" id="page-software">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Software &amp; Downloads</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"I decided to pick the diet that I thought would maximize my chances of long-term survival." &mdash; Al Gore
+						</p>
+					</header>
+					<img class="poster" src="images/3.jpg" alt="img03" />
+				</div>
+				<div class="page" id="page-custom">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Customization &amp; Settings</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"You have to make a conscious decision to change for your own well-being, that of your family and your country." &mdash;Bill Clinton
+						</p>
+					</header>
+					<img class="poster" src="images/4.jpg" alt="img04" />
+				</div>
+				<div class="page" id="page-training">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Training &amp; Learning Center</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"The moment I began to understand what was going on with the treatment of animals, it led me more and more in the way of the path I am [on] now, which is a complete vegan." &mdash; Bryan Adams
+						</p>
+					</header>
+					<!--<img class="poster" src="images/5.jpg" alt="img05" />-->
+				</div>
+				<div class="page" id="page-buy">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Where to buy</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"When people ask me why I don't eat meat or any other animal products, I say, 'Because they are unhealthy and they are the product of a violent and inhumane industry.'" &mdash;
+						</p>
+					</header>
+					<img class="poster" src="images/6.jpg" alt="img06" />
+				</div>
+				<div class="page" id="page-blog">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Blog &amp; News</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?" &mdash; Jeremy Bentham
+						</p>
+					</header>
+					<img class="poster" src="images/1.jpg" alt="img01" />
+				</div>
+				<div class="page" id="page-contact">
+					<header class="bp-header cf">
+						<h1 class="bp-header__title">Contact</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+							"Man is the only animal that can remain on friendly terms with the victims he intends to eat until he eats them." &mdash; Samuel Butler
+						</p>
+					</header>
+					<img class="poster" src="images/4.jpg" alt="img04" />
+				</div>
+			</div>
+			<!-- /pages-stack -->
+
+
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+
+			<button class="menu-button"><span>Menu</span></button>
+			<!--<script src="js/classie.js"></script>-->
+			<script src="js/main.js"></script>
+
+
+		<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
+
+            $('table').DataTable( {
+                paging: false,
+                select: true,
+                "scrollY": "200px",
+                //"scrollCollapse": true,
+               // "paging": false
+            } );
+		</script>
+	</body>
 </html>
